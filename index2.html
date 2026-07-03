@@ -1,0 +1,545 @@
+```
+<nav class="sticky top-0 w-full bg-white/90 backdrop-blur-md border-b border-gray-200 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="text-2xl font-bold text-brand-navy tracking-tight">👑 The Breath of Beauty</div>
+        <div class="flex gap-6 text-sm font-medium text-gray-600">
+            <a href="#market" class="hover:text-brand-teal transition-colors">Market & Targets</a>
+            <a href="#strategy" class="hover:text-brand-teal transition-colors">Strategic Positioning</a>
+            <a href="#experience" class="hover:text-brand-teal transition-colors">O2O Experience</a>
+            <a href="#impact" class="hover:text-brand-teal transition-colors">Roadmap & KPIs</a>
+        </div>
+    </div>
+</nav>
+
+<header class="max-w-6xl mx-auto px-4 py-16 md:py-24 text-center">
+    <div class="inline-block px-4 py-1.5 rounded-full bg-brand-pink/30 text-brand-navy font-semibold text-sm mb-6 border border-brand-pink">
+        Strategic Collaboration 2026
+    </div>
+    <h1 class="text-5xl md:text-6xl font-extrabold text-brand-navy mb-6 leading-tight">
+        พลิกโฉมตำนานเภสัชกร <br /> สู่ไลฟ์สไตล์ไอเทมแห่งอนาคต
+    </h1>
+    <p class="text-xl text-gray-600 max-w-3xl mx-auto mb-10">
+        โปรเจกต์ <strong>King Health Care x Moshi Moshi</strong> เปลี่ยนผ่านจากยารักษา (Functional Cure) สู่ประสบการณ์การดูแลตัวเอง (Self-Care Experience) ที่เชื่อมโยงอารมณ์ของ Gen Z และความไว้วางใจของกลุ่มครอบครัว
+    </p>
+</header>
+
+<main class="max-w-6xl mx-auto px-4 space-y-24 pb-24">
+
+    <section id="market" class="scroll-mt-24">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-brand-navy mb-4">ส่วนที่ 1: วิเคราะห์โอกาสทางการตลาดและกลุ่มเป้าหมาย</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                ส่วนนี้แสดงข้อมูลเชิงปริมาณ (Quantitative Data) แนวโน้มการเติบโตของตลาดบิวตี้ไทย และข้อมูลเชิงคุณภาพ (Qualitative Insights) ของกลุ่มเป้าหมายหลัก 2 กลุ่ม เพื่อทำความเข้าใจทิศทางอุปสงค์ในปี 2026
+            </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-12 items-start">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <h3 class="text-xl font-bold text-brand-navy mb-2">แนวโน้มการเติบโตตลาด (2024-2029)</h3>
+                <p class="text-sm text-gray-500 mb-6">คาดการณ์การเติบโตตลาด Color & Skincare เทียบกับการเติบโตเป้าหมายของแบรนด์ (CAGR 7-10%)</p>
+                <div class="chart-container">
+                    <canvas id="marketGrowthChart"></canvas>
+                </div>
+                <div class="mt-6 flex justify-between text-center bg-gray-50 p-4 rounded-xl">
+                    <div><div class="text-2xl font-bold text-brand-teal">7.5%</div><div class="text-xs text-gray-500">Market Growth</div></div>
+                    <div><div class="text-2xl font-bold text-brand-teal">14%</div><div class="text-xs text-gray-500">Color & Skincare</div></div>
+                    <div><div class="text-2xl font-bold text-brand-teal">10%</div><div class="text-xs text-gray-500">Target Growth</div></div>
+                </div>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
+                <h3 class="text-xl font-bold text-brand-navy mb-6">เจาะลึกพฤติกรรมกลุ่มเป้าหมาย (Audience Insights)</h3>
+                
+                <div class="flex gap-2 p-1 bg-gray-100 rounded-lg mb-6">
+                    <button id="btn-genz" class="flex-1 py-2 text-sm font-bold bg-white text-brand-navy shadow-sm rounded-md transition-all">Gen Z & Alpha</button>
+                    <button id="btn-millennial" class="flex-1 py-2 text-sm font-medium text-gray-500 hover:text-brand-navy transition-all">Millennial Moms</button>
+                </div>
+
+                <div id="content-genz" class="fade-in space-y-4">
+                    <div class="p-4 border-l-4 border-brand-teal bg-teal-50/50 rounded-r-lg">
+                        <div class="font-bold text-brand-navy mb-1">🎭 Identity & Discovery (ค้นหาตัวตน)</div>
+                        <p class="text-sm text-gray-600">มองหาลิปที่สร้างเอกลักษณ์เฉพาะตัว ชอบการ DIY ตลับลิปมัน ไม่ใช่แค่เพื่อสุขอนามัย แต่เป็นแฟชั่นไอเทม (Lifestyle Appeal)</p>
+                    </div>
+                    <div class="p-4 border-l-4 border-brand-teal bg-teal-50/50 rounded-r-lg">
+                        <div class="font-bold text-brand-navy mb-1">📱 TikTok Commerce</div>
+                        <p class="text-sm text-gray-600">อ่อนไหวต่อคอนเทนต์แนวไวรัลที่จริงใจ (UGC) เช่น ASMR แกะกล่องจุ่ม หรือมุกตลกล้อเลียน มากกว่าโฆษณาขายตรง</p>
+                    </div>
+                    <div class="p-4 border-l-4 border-brand-teal bg-teal-50/50 rounded-r-lg">
+                        <div class="font-bold text-brand-navy mb-1">💸 ถูกและดี (Smart Value)</div>
+                        <p class="text-sm text-gray-600">ต้องการประสิทธิภาพที่เห็นผลจริงระดับคลินิก แต่ราคาต้องเข้าถึงได้ด้วยค่าขนมนักเรียน</p>
+                    </div>
+                </div>
+
+                <div id="content-millennial" class="hidden fade-in space-y-4">
+                    <div class="p-4 border-l-4 border-brand-pink bg-pink-50/50 rounded-r-lg">
+                        <div class="font-bold text-brand-navy mb-1">🛡️ Anti-Sephora Kids (ปกป้องลูก)</div>
+                        <p class="text-sm text-gray-600">กังวลเรื่องสารเคมีในเครื่องสำอางผู้ใหญ่ที่ลูกอยากใช้ มองหาทางเลือกที่ปลอดภัย (Dermatologically-Tested)</p>
+                    </div>
+                    <div class="p-4 border-l-4 border-brand-pink bg-pink-50/50 rounded-r-lg">
+                        <div class="font-bold text-brand-navy mb-1">🕰️ Nostalgic Trust (ความผูกพันดั้งเดิม)</div>
+                        <p class="text-sm text-gray-600">มีความเชื่อมั่นในตลับชมพู "เภสัชกร" ตั้งแต่วัยเด็ก ทำให้ตัดสินใจซื้อให้ลูกได้ง่ายโดยปราศจากความลังเล (Zero Friction)</p>
+                    </div>
+                    <div class="p-4 border-l-4 border-brand-pink bg-pink-50/50 rounded-r-lg">
+                        <div class="font-bold text-brand-navy mb-1">🤝 Purpose & Bonding</div>
+                        <p class="text-sm text-gray-600">สนับสนุนแบรนด์ที่มีโครงการคืนสู่สังคม (ICU Foundation) และชอบกิจกรรม DIY ที่ทำร่วมกับลูกได้</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="strategy" class="scroll-mt-24">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-brand-navy mb-4">ส่วนที่ 2: กลยุทธ์การหาพื้นที่ว่าง (Strategic White Space)</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                ส่วนนี้ใช้ Matrix Framework เพื่อเปรียบเทียบแบรนด์คู่แข่งในตลาด แสดงให้เห็นว่าการนำความน่าเชื่อถือระดับยา (Clinical Trust) มาผสานกับไลฟ์สไตล์ (Lifestyle Appeal) สร้างจุดยืนที่ได้เปรียบเด็ดขาด (Unfair Advantage)
+            </p>
+        </div>
+
+        <div class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100 flex flex-col md:flex-row items-center gap-12">
+            <div class="w-full md:w-1/2">
+                <div class="matrix-grid">
+                    <div class="matrix-axis-x"></div>
+                    <div class="matrix-axis-y"></div>
+                    
+                    <div class="absolute -top-6 left-1/2 -translate-x-1/2 text-xs font-bold text-gray-400 uppercase tracking-wider">High Lifestyle / Design</div>
+                    <div class="absolute -bottom-6 left-1/2 -translate-x-1/2 text-xs font-bold text-gray-400 uppercase tracking-wider">Low Lifestyle / Design</div>
+                    <div class="absolute -left-12 top-1/2 -translate-y-1/2 -rotate-90 text-xs font-bold text-gray-400 uppercase tracking-wider whitespace-nowrap">Premium / Trend Pricing</div>
+                    <div class="absolute -right-8 top-1/2 -translate-y-1/2 -rotate-90 text-xs font-bold text-gray-400 uppercase tracking-wider whitespace-nowrap">Accessible Value</div>
+
+                    <div class="p-4 flex flex-col justify-start items-start">
+                        <span class="brand-pill">Rhode</span>
+                        <span class="brand-pill">Gala Camille</span>
+                    </div>
+                    <div class="p-4 flex flex-col justify-end items-start relative">
+                        <span class="brand-pill-hero">⭐ เภสัชกร x Moshi Moshi</span>
+                    </div>
+                    <div class="p-4 flex flex-col justify-start items-end">
+                        <span class="brand-pill text-gray-300">Generic Brands</span>
+                    </div>
+                    <div class="p-4 flex flex-col justify-end items-end">
+                        <span class="brand-pill">Vaseline (ตลับ)</span>
+                        <span class="brand-pill">เภสัชกร (Original)</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="w-full md:w-1/2 space-y-6">
+                <h3 class="text-2xl font-bold text-brand-navy">The Intersection of Trust & Fun</h3>
+                <p class="text-gray-600">
+                    แบรนด์ส่วนใหญ่มักตกอยู่ใน 2 ขั้ว: <strong>สีสันจัดจ้านแต่แม่ไม่ไว้ใจ</strong> หรือ <strong>ปลอดภัยระดับยาแต่วัยรุ่นมองว่าน่าเบื่อ</strong>
+                </p>
+                <ul class="space-y-4">
+                    <li class="flex items-start">
+                        <span class="text-brand-teal mr-3 mt-1 text-xl">💡</span>
+                        <div>
+                            <strong class="block text-brand-navy">SO Strategy (Strengths + Opportunities):</strong>
+                            <span class="text-sm text-gray-600">ใช้คุณภาพสินค้าระดับคลินิก 40 ปี เจาะกลุ่มวัยรุ่นผ่านช่องทางกระจายสินค้าและ Vibe ของร้าน Moshi Moshi สร้าง Bundle Set DIY ตลับลิปมัน</span>
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-brand-pink mr-3 mt-1 text-xl">🎯</span>
+                        <div>
+                            <strong class="block text-brand-navy">Value Proposition 4 มิติ:</strong>
+                            <span class="text-sm text-gray-600"><strong>Functional</strong> (รักษาปากแตกจริง), <strong>Emotional</strong> (ภูมิใจในเอกลักษณ์), <strong>Social</strong> (แชร์ต่ออวดเพื่อนได้), <strong>Purpose</strong> (ช่วยเหลือบริจาค ICU)</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="scroll-mt-24">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-brand-navy mb-4">ส่วนที่ 3: ระบบ Interactive O2O (Online-to-Offline)</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                ส่วนนี้จำลองเครื่องมือการตลาด "Personality Quiz: แม่มดคนสุดท้าย" เพื่อเปลี่ยนผู้ชมออนไลน์ (Traffic) ให้กลายเป็นการรับรู้ตัวตน และขับเคลื่อนให้ไปทำ "ภารกิจดูแลตัวเอง" พร้อมรับส่วนลดที่หน้าร้าน Moshi Moshi จริง (O2O Conversion)
+            </p>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-lg border border-gray-100 overflow-hidden max-w-4xl mx-auto">
+            <div class="bg-brand-navy p-6 text-center">
+                <h3 class="text-2xl font-bold text-white mb-2">🔮 The Last Witch's Atelier 🔮</h3>
+                <p class="text-brand-pink text-sm">ค้นหาเวทมนตร์และภารกิจกู้คืนลมหายใจของแม่มดคนสุดท้ายในตัวคุณ</p>
+            </div>
+            
+            <div id="quiz-container" class="p-8 md:p-12 bg-[#faf9f6]">
+                <div id="quiz-intro" class="text-center space-y-6 fade-in">
+                    <p class="text-gray-600 text-lg">ในโลกที่ทุกคนเร่งรีบจนลืมวิธีหยุดพัก... เวทมนตร์ดั้งเดิมกำลังค่อยๆ เลือนหายไป แต่ลึกลงไปในหัวใจ คุณคือ <strong>'แม่มดคนสุดท้าย'</strong> ที่ยังคงมองเห็นความมหัศจรรย์ในสิ่งธรรมดาๆ</p>
+                    <p class="text-gray-600 text-lg">ตอบคำถาม 3 ข้อเพื่อรับมอบภารกิจดูแลตัวเอง และรับเวทมนตร์อุดหนุนส่วนลดหน้าร้าน Moshi Moshi</p>
+                    <button onclick="startQuiz()" class="bg-brand-teal text-white font-bold py-3 px-8 rounded-full shadow-lg hover:shadow-xl hover:bg-teal-600 transition-all transform hover:-translate-y-1">
+                        เริ่มค้นหาเวทมนตร์
+                    </button>
+                </div>
+
+                <div id="quiz-question-area" class="hidden fade-in">
+                    <div class="text-sm font-bold text-brand-teal mb-2 tracking-widest uppercase">คำถาม <span id="q-num">1</span>/3</div>
+                    <h4 id="q-text" class="text-xl font-bold text-brand-navy mb-6"></h4>
+                    <div id="q-options" class="space-y-3"></div>
+                </div>
+
+                <div id="quiz-result-area" class="hidden fade-in text-center">
+                    <div class="inline-block p-4 rounded-2xl bg-white shadow-sm border border-gray-100 mb-6">
+                        <div class="text-5xl mb-4" id="r-icon"></div>
+                        <h4 class="text-2xl font-bold text-brand-navy mb-2" id="r-title"></h4>
+                        <p class="text-sm font-bold text-brand-pink mb-4" id="r-mission"></p>
+                        <p class="text-gray-600 text-sm mb-4" id="r-desc"></p>
+                        
+                        <div class="bg-gray-50 p-4 rounded-xl text-left">
+                            <div class="font-bold text-brand-navy text-sm mb-2">📝 CHECKLIST ภารกิจดูแลตัวเอง:</div>
+                            <ul class="text-sm text-gray-600 space-y-2">
+                                <li class="flex items-start"><span class="mr-2">✔️</span> <span id="r-task1"></span></li>
+                                <li class="flex items-start"><span class="mr-2">✔️</span> สร้างสเปซบำบัด: เดินไปเติมสติกเกอร์ที่ Moshi Moshi</li>
+                                <li class="flex items-start"><span class="mr-2">✔️</span> ส่งต่อลมหายใจ: ทุกการแลกซื้อ สมทบทุน ICU รพ.รัฐ</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-brand-navy text-white p-6 rounded-2xl">
+                        <div class="font-bold mb-2">🎁 คูปองชุดวัตถุดิบปรุงยาพื้นฐานของคุณ</div>
+                        <p class="text-sm text-gray-300 mb-4">แสดงหน้าจอนี้ที่ร้าน Moshi Moshi สาขาใกล้บ้าน เพื่อรับส่วนลด 15% ทันที</p>
+                        <div class="bg-white text-brand-navy text-2xl font-mono font-bold py-2 px-4 rounded-lg inline-block tracking-widest border-2 border-dashed border-brand-teal">
+                            WITCH26
+                        </div>
+                        <p class="text-xs text-brand-pink mt-3">* คูปองมีอายุ 48 ชั่วโมงหลังการทดสอบ (Instant Scarcity Incentive)</p>
+                    </div>
+                    <button onclick="resetQuiz()" class="mt-6 text-sm text-gray-500 hover:text-brand-teal underline">เริ่มการทดสอบใหม่</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="impact" class="scroll-mt-24">
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-bold text-brand-navy mb-4">ส่วนที่ 4: แผนดำเนินการและผลลัพธ์ที่คาดหวัง (Execution & KPIs)</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                ส่วนนี้สรุป Roadmap การปล่อยแคมเปญทั้ง 4 เฟส และนำเสนอเป้าหมายเชิงตัวเลข (KPIs) ที่จะช่วยพลิกฟื้นแบรนด์เภสัชกรให้เติบโตอย่างยั่งยืน
+            </p>
+        </div>
+
+        <div class="bg-white p-8 md:p-12 rounded-3xl shadow-sm border border-gray-100">
+            
+            <h3 class="text-xl font-bold text-brand-navy mb-8 text-center">2026 Strategic Execution Roadmap</h3>
+            <div class="relative w-full max-w-4xl mx-auto mb-16">
+                <div class="timeline-line hidden md:block"></div>
+                <div class="flex flex-col md:flex-row justify-between gap-6 relative">
+                    <div class="text-center flex-1">
+                        <div class="timeline-dot hidden md:block"></div>
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 mt-4 h-full">
+                            <div class="text-xs font-bold text-brand-teal uppercase mb-1">Jan - Mar</div>
+                            <h4 class="font-bold text-brand-navy mb-2">Phase 1: Foundation</h4>
+                            <p class="text-xs text-gray-500">ออกแบบ DIY Kits, เตรียมระบบ O2O Quiz และเชื่อมระบบริจาค ICU</p>
+                        </div>
+                    </div>
+                    <div class="text-center flex-1">
+                        <div class="timeline-dot hidden md:block"></div>
+                        <div class="bg-teal-50 p-4 rounded-xl border border-teal-100 mt-4 h-full">
+                            <div class="text-xs font-bold text-brand-teal uppercase mb-1">April</div>
+                            <h4 class="font-bold text-brand-navy mb-2">Phase 2: Launch</h4>
+                            <p class="text-xs text-gray-500">เปิดตัวช่วงสงกรานต์ จัด Exclusive Takeover ที่หน้าร้าน และ Influencer Seeding</p>
+                        </div>
+                    </div>
+                    <div class="text-center flex-1">
+                        <div class="timeline-dot hidden md:block"></div>
+                        <div class="bg-pink-50 p-4 rounded-xl border border-pink-100 mt-4 h-full">
+                            <div class="text-xs font-bold text-brand-pink uppercase mb-1">May - Jun</div>
+                            <h4 class="font-bold text-brand-navy mb-2">Phase 3: Viral</h4>
+                            <p class="text-xs text-gray-500">ประกวดคลิป TikTok "ตลับจิ๋วเรื่องแจ๋ว" สร้าง User Generated Content ปริมาณมหาศาล</p>
+                        </div>
+                    </div>
+                    <div class="text-center flex-1">
+                        <div class="timeline-dot hidden md:block"></div>
+                        <div class="bg-gray-50 p-4 rounded-xl border border-gray-100 mt-4 h-full">
+                            <div class="text-xs font-bold text-brand-teal uppercase mb-1">July+</div>
+                            <h4 class="font-bold text-brand-navy mb-2">Phase 4: Impact</h4>
+                            <p class="text-xs text-gray-500">แคมเปญวันแม่, พิธีมอบยอดบริจาค ICU, และเตรียม Lip Return Program (EPR)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-100 pt-12">
+                <h3 class="text-xl font-bold text-brand-navy mb-6 text-center">Anticipated Impact & KPIs</h3>
+                <div class="grid md:grid-cols-2 gap-8 items-center">
+                    <div class="chart-container">
+                        <canvas id="kpiChart"></canvas>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="text-4xl font-bold text-brand-teal w-24 text-right">9.33%</div>
+                            <div>
+                                <div class="font-bold text-brand-navy">Effective Annual Growth</div>
+                                <div class="text-sm text-gray-500">อัตราการเติบโตเป้าหมายจากสัดส่วน SKU ใหม่ (Ultra & Natural Pink)</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-4xl font-bold text-brand-pink w-24 text-right">80%</div>
+                            <div>
+                                <div class="font-bold text-brand-navy">Sell-Through Rate</div>
+                                <div class="text-sm text-gray-500">คาดการณ์สินค้า DIY Bundle Set ขาดตลาดภายในเดือนแรกที่วางจำหน่าย</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="text-4xl font-bold text-brand-teal w-24 text-right">10M+</div>
+                            <div>
+                                <div class="font-bold text-brand-navy">Campaign Impressions</div>
+                                <div class="text-sm text-gray-500">ยอดการมองเห็นแบบออร์แกนิกผ่าน TikTok UGC Contest หลบเลี่ยง Algorithm ปิดกั้นโฆษณา</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="bg-brand-navy text-white py-12 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+        <h2 class="text-3xl font-bold mb-4">Let's Breathe Life Into Beauty</h2>
+        <p class="text-brand-pink mb-8">เราไม่ใช่แค่ขายลิปมัน... แต่เราขายความมั่นใจที่เป็นตัวเอง และส่งต่อลมหายใจสู่สังคม</p>
+        <div class="text-sm text-gray-400">
+            <p>Strategic Pitch SPA Example • King Health Care x Moshi Moshi Project</p>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // --- 1. Target Audience Toggle Logic ---
+    const btnGenZ = document.getElementById('btn-genz');
+    const btnMillennial = document.getElementById('btn-millennial');
+    const contentGenZ = document.getElementById('content-genz');
+    const contentMillennial = document.getElementById('content-millennial');
+
+    btnGenZ.addEventListener('click', () => {
+        btnGenZ.classList.add('bg-white', 'text-brand-navy', 'shadow-sm', 'font-bold');
+        btnGenZ.classList.remove('text-gray-500', 'font-medium');
+        
+        btnMillennial.classList.remove('bg-white', 'text-brand-navy', 'shadow-sm', 'font-bold');
+        btnMillennial.classList.add('text-gray-500', 'font-medium');
+
+        contentGenZ.classList.remove('hidden');
+        contentMillennial.classList.add('hidden');
+    });
+
+    btnMillennial.addEventListener('click', () => {
+        btnMillennial.classList.add('bg-white', 'text-brand-navy', 'shadow-sm', 'font-bold');
+        btnMillennial.classList.remove('text-gray-500', 'font-medium');
+        
+        btnGenZ.classList.remove('bg-white', 'text-brand-navy', 'shadow-sm', 'font-bold');
+        btnGenZ.classList.add('text-gray-500', 'font-medium');
+
+        contentMillennial.classList.remove('hidden');
+        contentGenZ.classList.add('hidden');
+    });
+
+    // --- 2. Chart.js Initialization ---
+    document.addEventListener('DOMContentLoaded', function() {
+        Chart.defaults.font.family = "'Helvetica Neue', 'Arial', sans-serif";
+        Chart.defaults.color = '#64748b';
+
+        // Market Growth Chart (Line)
+        const ctxMarket = document.getElementById('marketGrowthChart').getContext('2d');
+        new Chart(ctxMarket, {
+            type: 'line',
+            data: {
+                labels: ['2024', '2025', '2026', '2027', '2029'],
+                datasets: [{
+                    label: 'Estimated Market Value (Index)',
+                    data: [100, 107.5, 115, 123.6, 143],
+                    borderColor: '#00a896',
+                    backgroundColor: 'rgba(0, 168, 150, 0.1)',
+                    borderWidth: 3,
+                    pointBackgroundColor: '#fff',
+                    pointBorderColor: '#00a896',
+                    pointBorderWidth: 2,
+                    pointRadius: 4,
+                    fill: true,
+                    tension: 0.4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { backgroundColor: '#002d62', titleFont: { size: 14 }, bodyFont: { size: 14 } }
+                },
+                scales: {
+                    y: { beginAtZero: false, min: 90, grid: { borderDash: [4, 4], color: '#e2e8f0' } },
+                    x: { grid: { display: false } }
+                }
+            }
+        });
+
+        // KPI Chart (Bar)
+        const ctxKpi = document.getElementById('kpiChart').getContext('2d');
+        new Chart(ctxKpi, {
+            type: 'bar',
+            data: {
+                labels: ['Target Phase 1', 'Target Phase 2', 'Target Phase 3', 'Total 2026'],
+                datasets: [{
+                    label: 'Projected Revenue Impact (%)',
+                    data: [25, 45, 75, 100],
+                    backgroundColor: ['#ffd1dc', '#2dd4bf', '#00a896', '#002d62'],
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { backgroundColor: '#002d62' }
+                },
+                scales: {
+                    y: { beginAtZero: true, max: 100, ticks: { callback: function(value) { return value + "%" } }, grid: { borderDash: [4, 4] } },
+                    x: { grid: { display: false } }
+                }
+            }
+        });
+    });
+
+    // --- 3. Interactive Quiz Logic (The Last Witch) ---
+    const quizData = [
+        {
+            q: "เมื่อคุณตื่นขึ้นมาในห้องปรุงยา สิ่งแรกที่คุณทำเพื่อ 'ปลุกพลังเวทมนตร์' สำหรับวันใหม่คืออะไร?",
+            opts: [
+                { t: "นอนนิ่งๆ ซึมซับความเงียบสงบ และทบทวนความคิดในหัว", v: "A" },
+                { t: "เปิดหน้าต่างรับลม สูดกลิ่นธรรมชาติ และรดน้ำต้นไม้", v: "B" },
+                { t: "เปิดเพลงโปรดเพื่อบูสต์พลังงาน แล้วคิดไอเดียการแต่งตัว", v: "C" },
+                { t: "ชงชาหรือกาแฟอุ่นๆ กลิ่นหอมกรุ่นให้ตัวเองสักแก้ว", v: "D" }
+            ]
+        },
+        {
+            q: "หากคุณสามารถเลือก 'ส่วนผสมเวทมนตร์' ดูแลตัวเองได้เพียงชิ้นเดียว คุณจะเลือก...",
+            opts: [
+                { t: "หยาดน้ำค้างยามเที่ยงคืน ที่มอบความชุ่มชื้นและล้ำลึก", v: "A" },
+                { t: "สารสกัดจากใบไม้และสมุนไพร ที่ช่วยเยียวยาความบอบช้ำ", v: "B" },
+                { t: "ผงประกายสีแดงเชอร์รี่ ที่เพิ่มความสดใสและความกล้าหาญ", v: "C" },
+                { t: "ความหอมละมุนดั้งเดิม ที่ทำให้รู้สึกอบอุ่นเหมือนได้กลับบ้าน", v: "D" }
+            ]
+        },
+        {
+            q: "เวลาที่เพื่อนของคุณรู้สึกเหนื่อยล้า เวทมนตร์ที่คุณมักใช้เพื่อ 'ชุบชูใจ' พวกเขาคือ...",
+            opts: [
+                { t: "รับฟังปัญหาอย่างตั้งใจด้วยความสงบ และให้คำแนะนำที่ตกผลึก", v: "A" },
+                { t: "พาออกไปสูดอากาศในที่ธรรมชาติ หรือส่งความห่วงใยผ่านของขวัญ", v: "B" },
+                { t: "ชวนทำกิจกรรมสนุกๆ ทำการ์ด DIY หรืองัดมุกตลกมาทำให้เขายิ้ม", v: "C" },
+                { t: "ทำอาหารหรือหาขนมอร่อยๆ ไปให้ แล้วนั่งอยู่เป็นเพื่อนเงียบๆ", v: "D" }
+            ]
+        }
+    ];
+
+    const archetypes = {
+        "A": {
+            name: "แม่มดแห่งดาราศาสตร์ (The Cosmic Star Witch)",
+            icon: "🌌",
+            mission: "ภารกิจประคองดวงดารา",
+            desc: "จงเป็นผู้อัญเชิญความสงบเงียบกลับคืนมา ปลอบประโลมหัวใจที่เหนื่อยล้าในความมืดด้วยสติปัญญาของคุณ",
+            task1: "รดน้ำให้ใจ: ทาลิปเภสัชกรสูตร Ultra Lip Care บำรุงล้ำลึกก่อนนอน"
+        },
+        "B": {
+            name: "แม่มดแห่งพฤกษาศาสตร์ (The Green Herbal Witch)",
+            icon: "🌿",
+            mission: "ภารกิจถักทอผืนป่า",
+            desc: "จงหว่านเมล็ดพันธุ์แห่งความจริงใจและความอบอุ่นลงในใจผู้คน เป็นพื้นที่ปลอดภัยที่โอบรับทุกรอยน้ำตา",
+            task1: "รดน้ำให้ใจ: ทาลิปเภสัชกรสูตร Natural Pink มอบชีวิตชีวาให้รอยยิ้ม"
+        },
+        "C": {
+            name: "แม่มดผู้แปรธาตุศิลปะ (The Creative Alchemist Witch)",
+            icon: "🎨",
+            mission: "ภารกิจปลุกแสงเหนือ",
+            desc: "จงระบายสีสันและความกล้าหาญลงบนผืนผ้าใบที่หม่นหมอง ปลุกให้คนรอบข้างภาคภูมิใจในเนื้อแท้ของตัวเอง",
+            task1: "รดน้ำให้ใจ: ทาลิปเภสัชกรสูตร Cherry Red ปลุกความมั่นใจไร้กฎเกณฑ์"
+        },
+        "D": {
+            name: "แม่มดแห่งครัวอบอุ่น (The Hearth & Kitchen Witch)",
+            icon: "☕",
+            mission: "ภารกิจจุดไฟเตาผิง",
+            desc: "จงสร้างพื้นที่ปลอดภัยและต้มชากล่องอบอุ่นคอยต้อนรับนักเดินทาง คืนความรู้สึกเชื่อใจกลับสู่จิตใจ",
+            task1: "รดน้ำให้ใจ: ทาลิปเภสัชกรตลับชมพูในตำนาน สัมผัสความอบอุ่นดั้งเดิม"
+        }
+    };
+
+    let currentQuestionIndex = 0;
+    let userAnswers = [];
+
+    const introArea = document.getElementById('quiz-intro');
+    const qArea = document.getElementById('quiz-question-area');
+    const rArea = document.getElementById('quiz-result-area');
+    const qNum = document.getElementById('q-num');
+    const qText = document.getElementById('q-text');
+    const qOptions = document.getElementById('q-options');
+
+    function startQuiz() {
+        currentQuestionIndex = 0;
+        userAnswers = [];
+        introArea.classList.add('hidden');
+        rArea.classList.add('hidden');
+        qArea.classList.remove('hidden');
+        renderQuestion();
+    }
+
+    function renderQuestion() {
+        qOptions.innerHTML = '';
+        const currentQ = quizData[currentQuestionIndex];
+        qNum.innerText = currentQuestionIndex + 1;
+        qText.innerText = currentQ.q;
+
+        currentQ.opts.forEach((opt) => {
+            const btn = document.createElement('button');
+            btn.className = 'quiz-btn w-full text-left p-4 rounded-xl border border-gray-200 bg-white text-gray-700 shadow-sm text-sm md:text-base';
+            btn.innerText = opt.t;
+            btn.onclick = () => handleAnswer(opt.v);
+            qOptions.appendChild(btn);
+        });
+    }
+
+    function handleAnswer(val) {
+        userAnswers.push(val);
+        if (currentQuestionIndex < quizData.length - 1) {
+            currentQuestionIndex++;
+            renderQuestion();
+        } else {
+            calculateResult();
+        }
+    }
+
+    function calculateResult() {
+        // Find mode (most frequent answer)
+        const counts = {};
+        let maxCount = 0;
+        let resultVal = 'A'; // default
+
+        userAnswers.forEach(v => {
+            counts[v] = (counts[v] || 0) + 1;
+            if (counts[v] > maxCount) {
+                maxCount = counts[v];
+                resultVal = v;
+            }
+        });
+
+        showResult(resultVal);
+    }
+
+    function showResult(val) {
+        qArea.classList.add('hidden');
+        rArea.classList.remove('hidden');
+        
+        const res = archetypes[val];
+        document.getElementById('r-icon').innerText = res.icon;
+        document.getElementById('r-title').innerText = res.name;
+        document.getElementById('r-mission').innerText = `✨ ${res.mission}`;
+        document.getElementById('r-desc').innerText = `"${res.desc}"`;
+        document.getElementById('r-task1').innerText = res.task1;
+    }
+
+    function resetQuiz() {
+        startQuiz();
+    }
+
+</script>
+
+```
